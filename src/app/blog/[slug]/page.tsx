@@ -84,6 +84,13 @@ const getPaperData = (slug: string) => {
   }
 };
 
+export function generateStaticParams() {
+  return [
+    { slug: 'paper-1' },
+    { slug: 'paper-2' },
+  ];
+}
+
 export default async function PaperPage({ params }: { params: Promise<{ slug: string }> }) {
   const resolvedParams = await params;
   const paper = getPaperData(resolvedParams.slug);
