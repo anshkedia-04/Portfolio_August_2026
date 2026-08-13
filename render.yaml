@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: portfolio-static
+    env: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./out
+    branch: main
