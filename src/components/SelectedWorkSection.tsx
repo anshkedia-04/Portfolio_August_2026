@@ -102,7 +102,7 @@ export default function SelectedWorkSection() {
 
 
       {/* Hover Image Strip Portal */}
-      <div className="fixed top-0 left-0 w-full h-full pointer-events-none z-40 overflow-hidden">
+      <div className="hidden lg:block fixed top-0 left-0 w-full h-full pointer-events-none z-40 overflow-hidden">
         {freelanceProjects.map((project) => (
           <motion.div
             key={`strip-${project.id}`}

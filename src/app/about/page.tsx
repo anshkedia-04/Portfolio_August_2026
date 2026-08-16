@@ -21,12 +21,12 @@ export default function AboutPage() {
         </div>
 
         {/* Middle Side: Portrait Image */}
-        <div className="lg:col-span-4 relative rounded-xl overflow-hidden h-[50vh] lg:h-auto min-h-[500px]">
+        <div className="lg:col-span-4 relative rounded-xl overflow-hidden h-[50vh] lg:h-auto min-h-[300px] md:min-h-[500px]">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/anshkedia.jpg"
             alt="Ansh Kedia Portrait"
-            className="w-full h-full object-cover object-center grayscale hover:grayscale-0 transition-all duration-700"
+            className="w-full h-full object-cover object-center md:grayscale hover:grayscale-0 transition-all duration-700"
           />
         </div>
 

@@ -27,10 +27,10 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 p-4 md:p-8 flex flex-col md:flex-row items-center justify-between text-fg gap-4 bg-transparent pointer-events-none">
-      
+    <header className="fixed top-0 left-0 w-full z-50 p-4 md:px-8 md:py-5 flex flex-col md:flex-row items-center justify-between text-fg gap-4 bg-bg/80 backdrop-blur-lg border-b border-border/10 shadow-sm">
+
       {/* Left Side: Logo */}
-      <div className="flex items-center gap-6 pointer-events-auto">
+      <div className="flex items-center gap-6">
         <Link
           href="/"
           className="text-lg md:text-xl tracking-tight link-hover flex items-baseline gap-2"
@@ -46,8 +46,8 @@ export default function Header() {
       </div>
 
       {/* Right Side: Navigation Links */}
-      <nav className="flex items-center gap-8 text-sm opacity-70 pointer-events-auto relative" ref={popupRef}>
-        <div className="relative">
+      <nav className="flex items-center gap-4 sm:gap-6 md:gap-8 text-sm opacity-100 md:relative" ref={popupRef}>
+        <div className="md:relative">
           <button
             onClick={() => togglePopup("work")}
             className="flex items-center gap-1 hover:opacity-100 transition-opacity outline-none font-medium"
@@ -64,12 +64,12 @@ export default function Header() {
                 animate={{ opacity: 1, y: 0, scale: 1 }}
                 exit={{ opacity: 0, y: 10, scale: 0.95 }}
                 transition={{ duration: 0.2 }}
-                className="absolute top-full mt-6 left-1/2 -translate-x-1/2 w-[85vw] max-w-[380px] bg-fg text-bg p-6 rounded-2xl shadow-2xl cursor-default border border-bg/5"
+                className="absolute top-full mt-2 md:mt-6 left-1/2 -translate-x-1/2 w-[90vw] max-w-[380px] bg-fg text-bg p-6 rounded-2xl shadow-2xl cursor-default border border-bg/5"
                 onClick={(e) => e.stopPropagation()}
                 onMouseEnter={() => setCursorState("default")}
               >
                 <div className="flex flex-col gap-5 text-left">
-                  
+
                   {/* Job Header */}
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center shrink-0 border border-blue-500/20">
@@ -81,7 +81,7 @@ export default function Header() {
                       <p className="text-xs font-semibold opacity-40 mt-1 uppercase tracking-wider">Aug 2026 - Present</p>
                     </div>
                   </div>
-                  
+
                   {/* Divider */}
                   <div className="w-full h-px bg-bg/10" />
 
@@ -107,7 +107,7 @@ export default function Header() {
 
         <Link
           href="/about"
-          className="hover:opacity-100 transition-opacity"
+          className="hover:opacity-100 transition-opacity hidden sm:block"
           onMouseEnter={() => setCursorState("hover")}
           onMouseLeave={() => setCursorState("default")}
           onClick={() => setActivePopup(null)}
@@ -115,10 +115,10 @@ export default function Header() {
           About
         </Link>
 
-        <div className="relative">
+        <div className="md:relative">
           <button
             onClick={() => togglePopup("contact")}
-            className="bg-fg text-bg px-5 py-2 rounded-full font-medium hover:scale-105 transition-transform outline-none flex items-center gap-2 shadow-lg"
+            className="bg-fg text-bg px-4 sm:px-5 py-2 rounded-full font-medium hover:scale-105 transition-transform outline-none flex items-center gap-2 shadow-lg"
             onMouseEnter={() => setCursorState("hover")}
             onMouseLeave={() => setCursorState("default")}
           >
@@ -131,27 +131,27 @@ export default function Header() {
                 animate={{ opacity: 1, y: 0, scale: 1 }}
                 exit={{ opacity: 0, y: 10, scale: 0.95 }}
                 transition={{ duration: 0.2 }}
-                className="absolute top-full mt-6 right-0 w-max max-w-[90vw] bg-fg text-bg p-6 rounded-xl shadow-2xl cursor-default"
+                className="absolute top-full mt-2 md:mt-6 left-1/2 -translate-x-1/2 md:left-auto md:translate-x-0 md:right-0 w-[90vw] md:w-max max-w-[380px] md:max-w-[90vw] bg-fg text-bg p-6 rounded-xl shadow-2xl cursor-default"
                 onClick={(e) => e.stopPropagation()}
                 onMouseEnter={() => setCursorState("default")}
               >
                 <div className="flex flex-col gap-4 text-left">
                   <h3 className="text-lg font-medium tracking-tight mb-2">Get in touch</h3>
-                  
-                  <a href="mailto:anshkedia.04@gmail.com" className="flex items-center gap-3 text-sm hover:opacity-70 transition-opacity">
-                    <Mail size={16} /> anshkedia.04@gmail.com
+
+                  <a href="mailto:anshkedia.04@gmail.com" className="flex items-center gap-3 text-sm hover:opacity-70 transition-opacity break-all">
+                    <Mail size={16} className="shrink-0" /> <span className="break-all">anshkedia.04@gmail.com</span>
                   </a>
 
-                  <a href="mailto:ansh.kedia@capgemini.com" className="flex items-center gap-3 text-sm hover:opacity-70 transition-opacity">
-                    <Mail size={16} /> ansh.kedia@capgemini.com
+                  <a href="mailto:ansh.kedia@capgemini.com" className="flex items-center gap-3 text-sm hover:opacity-70 transition-opacity break-all">
+                    <Mail size={16} className="shrink-0" /> <span className="break-all">ansh.kedia@capgemini.com</span>
                   </a>
-                  
+
                   <a href="https://www.linkedin.com/in/ansh-kedia-249843266" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-sm hover:opacity-70 transition-opacity">
                     <ExternalLink size={16} /> LinkedIn
                   </a>
-                  
+
                   <hr className="border-bg/10 my-2" />
-                  
+
                   <a href="tel:8758838722" className="flex items-center gap-3 text-sm font-medium hover:opacity-70 transition-opacity">
                     <Calendar size={16} /> +91 8758838722
                   </a>
@@ -161,7 +161,7 @@ export default function Header() {
           </AnimatePresence>
         </div>
       </nav>
-      
+
     </header>
   );
 }

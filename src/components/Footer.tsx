@@ -27,13 +27,12 @@ export default function Footer() {
         
         {/* Left Side: Image/Video */}
         <div className="w-full md:w-auto shrink-0 relative">
-          <div className="w-full md:w-[320px] aspect-[16/9] rounded-xl overflow-hidden shadow-2xl relative">
-            {/* You can replace this src with your own image or video */}
+          <div className="w-full md:w-[320px] aspect-[4/5] rounded-xl overflow-hidden shadow-2xl relative">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img 
               src="/profile.png" 
               alt="Ansh Kedia"
-              className="w-full h-full object-cover opacity-80"
+              className="w-full h-full object-cover object-center"
             />
           </div>
         </div>
