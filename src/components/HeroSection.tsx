@@ -63,7 +63,7 @@ export default function HeroSection() {
         <div className="flex flex-col gap-2">
           <span className="text-xs uppercase tracking-widest text-accent font-semibold">02 / Expertise</span>
           <p className="text-sm md:text-base text-fg-muted leading-relaxed pr-4">
-            Custom websites, mobile & desktop apps, AI solutions, and ERP platforms.
+            Generative AI pipelines, machine learning systems, full-stack web platforms, and SAP ERP solutions.
           </p>
         </div>
         <div className="flex flex-col gap-2">
