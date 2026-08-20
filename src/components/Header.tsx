@@ -87,7 +87,7 @@ export default function Header() {
 
                   {/* Description */}
                   <p className="text-sm leading-relaxed opacity-80">
-                    Leading development of scalable enterprise platforms and AI-augmented workflows. Specializing in bespoke full-stack applications, intelligent POS systems, and computer vision integrations from early prototyping to production scale.
+                    Leading development of scalable enterprise platforms and AI-augmented workflows. Specializing in robust ERP solutions, intelligent agentic systems, and Generative AI integrations from early prototyping to production scale.
                   </p>
                 </div>
               </motion.div>

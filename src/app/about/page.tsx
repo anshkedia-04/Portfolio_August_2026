@@ -33,24 +33,24 @@ export default function AboutPage() {
         {/* Right Side: Bio Text */}
         <div className="lg:col-span-3 flex flex-col justify-center text-white/60 text-sm md:text-base gap-6 leading-relaxed lg:pl-8 py-8 lg:py-0">
           <p>
-            Software engineer working at the intersection of design and code. I design and build fully custom web experiences end to end, from first Figma frame to production build. Lately that includes AI-native apps and enterprise platforms.
+            Software engineer working at the intersection of enterprise solutions and artificial intelligence. I design and build scalable intelligent systems end-to-end, from initial architecture to production deployment. Lately, that includes GenAI-native applications and robust ERP platforms.
           </p>
 
           <p>
-            An AI-augmented workflow sits at the core of how I ship. I currently work at Capgemini, engineering intelligent systems. I move fast and treat shipping as the only proof that something is real.
+            An AI-augmented workflow sits at the core of how I ship. I currently work at Capgemini, engineering intelligent systems with a focus on industry-standard Generative AI architectures, LLMs, and RAG pipelines. I move fast and treat shipping as the only proof that something is real.
           </p>
 
           <div className="flex flex-col gap-6 mt-4">
             <div className="flex gap-4 items-start">
               <span className="text-white/30 text-lg leading-none">/</span>
               <p className="text-sm">
-                Engineer on scalable component systems and POS command centres built for high performance and offline capabilities.
+                Engineer on scalable enterprise platforms and AI-driven business solutions built for high performance and seamless integrations.
               </p>
             </div>
             <div className="flex gap-4 items-start">
               <span className="text-white/30 text-lg leading-none">/</span>
               <p className="text-sm">
-                Built MVPs and deep learning computer vision prototypes (like VisionMouse and AirTune) to validate new venture ideas.
+                Built MVPs, real-time decision engines, and AI assistants (like LifePulse, MedAssist XR, and VoyageAI) utilizing generative AI and deep learning frameworks to validate new venture ideas.
               </p>
             </div>
           </div>
